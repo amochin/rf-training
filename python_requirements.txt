@@ -1,9 +1,9 @@
 oracledb
 robotframework
-robotframework-seleniumlibrary
+# robotframework-seleniumlibrary
 robotframework-databaselibrary
 robotframework-datadriver[XLS]
 robotframework-browser
 robotframework-robocop
 robotframework-libtoc
-webdrivermanager
+# webdrivermanager
