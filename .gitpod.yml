@@ -4,10 +4,17 @@ tasks:
       pip install -r python_requirements.txt
       rfbrowser init
 #      webdrivermanager chrome --linkpath /usr/local/bin
-image: gitpod/workspace-full-vnc
+  - name: Start web server for RF logs
+    init: python -m http.server 8000 -d logs
+
 ports:
-  - port: 6080
-    onOpen: open-preview
+    - port: 8000
+      onOpen: open-preview
+    - port: 6080
+      onOpen: open-preview
+
+image: gitpod/workspace-full-vnc
+
 vscode:
   extensions:
     - ms-python.python
