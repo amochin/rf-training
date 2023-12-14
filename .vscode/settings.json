@@ -3,8 +3,7 @@
         "**/.git": true,
         "**/__pycache__": true
     },
-    "robot.lint.robocop.enabled": true,
-    "robot.lint.unusedKeyword":false,
+    "robot.lint.robocop.enabled": false,
     "robot.interactiveConsole.arguments": [
         "--output", "${workspaceRoot}/logs/interactive_console.xml"
     ],
