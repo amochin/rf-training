@@ -5,13 +5,15 @@ tasks:
       rfbrowser init
 #      webdrivermanager chrome --linkpath /usr/local/bin
   - name: Start web server for RF logs
-    init: python -m http.server 8000 -d logs
+    init: python -m http.server 8080 -d logs
 
 ports:
+    - port: 5900
+      onOpen: ignore
     - port: 8000
       onOpen: open-preview
-    - port: 6080
-      onOpen: open-preview
+    - port: 8080
+      onOpen: open-browser
 
 image: gitpod/workspace-full-vnc
 
