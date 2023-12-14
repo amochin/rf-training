@@ -1,8 +1,8 @@
 tasks:
   - init: |
       python -m pip install --upgrade pip
-  - name: Start web server for RF logs
-    init: python -m http.server 8080 -d logs
+  - name: Web server for RF logs
+    init: python -m http.server 8080
 
 ports:
     - port: 5900
