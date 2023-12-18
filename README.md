@@ -24,7 +24,7 @@ Please open the folder in [VS Code](https://code.visualstudio.com/) and install 
 For this repository, you can use the prepared link:  
 [**Open the workspace in Gitpod**](http://www.gitpod.io/#https://github.com/amochin/rf-training)  
 
-Or you can create a Gitpod workspace from any GitHub repository just pasting a link in the [New Workspace window](https://gitpod.io/new).
+Or you can create a Gitpod workspace from any GitHub repository just pasting it's link in the [New Workspace window](https://gitpod.io/new).
 
 ### Installing Robot Framework and libraries
 Initially, the workspace has some common prerequisites installed, including **Python**, **Node.js**, **Java** and **Docker**. See the full list in the [Gitpod docs](https://www.gitpod.io/docs/configure/workspaces/workspace-image).
