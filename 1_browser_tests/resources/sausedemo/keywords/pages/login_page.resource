@@ -8,3 +8,9 @@ Open Login Page
 
 Check Login Page Open
     Get Text    //*[@class='login_logo']    ==    Swag Labs
+
+Login
+    [Arguments]    ${Username}    ${Password}
+    Fill Text    id=user-name    ${Username}
+    Fill Secret    id=password    $Password
+    Click    id=login-button
