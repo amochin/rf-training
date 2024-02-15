@@ -7,4 +7,4 @@ Open Login Page
     Check Login Page Open
 
 Check Login Page Open
-    Fail    Looking for a student to implement me!
+    Get Text    //*[@class='login_logo']    ==    Swag Labs
