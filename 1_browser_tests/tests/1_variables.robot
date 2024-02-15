@@ -6,18 +6,19 @@ Resource    ../resources/sausedemo/import.resource
 ...    Sauce Labs Backpack=29.99
 ...    Sauce Labs Bike Light=9.99
 
+&{USER_STANDARD}    Username=standard_user    Password=secret_sauce
 
 *** Test Cases ***
 Check Items Shown
     Launch Sausedemo
     Open Login Page
-    Login    standard_user    secret_sauce
+    Login    ${USER_STANDARD}[Username]    ${USER_STANDARD}[Password]
     Check Items Shown    Sauce Labs Backpack    Sauce Labs Bike Light
 
 Check Item Prices
     Launch Sausedemo
     Open Login Page
-    Login    standard_user    secret_sauce
+    Login    &{USER_STANDARD}
     Check Item Prices
 
 *** Keywords ***
