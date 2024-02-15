@@ -14,3 +14,7 @@ Login
     Fill Text    id=user-name    ${Username}
     Fill Secret    id=password    $Password
     Click    id=login-button
+
+Logout
+    # Here should be real logout
+    Open Login Page
